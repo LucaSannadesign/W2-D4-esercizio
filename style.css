@@ -1,35 +1,65 @@
+
 * {
     padding: 0;
     margin:0;
     box-sizing: border-box;
 }
+a {cursor: pointer ;}
 .nav-bar {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+    border-bottom: 1px solid antiquewhite;
+      box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    z-index: 200;
+    width:100%;
+    background-color: white;
 }
+
+.content-bottom {
+    margin-bottom: 40px;
+  }
+
 .logo img {
     width: 200px;
+    width: 180px;
 }
 .icons {
     display: flex;
     align-items: center;
     justify-content: end;
 }
+.icons-dx {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+}
+.twitter-cinnect {
+    border-radius: 50%;
+    border: 1px solid #414141;
+    padding: 10px 20px;
+}
 .nav-search .input-search {
     border-radius: 10px;
+    border-radius: 20px;
+    padding: 7px;
+    border: 1px solid #cacaca;
 }
 
 .main {
     padding: 20px;
     display: flex;
     width: 100%;
+    padding-top: 80px;
 }
 #sidebar-sx {
     width: 60%;
+#sidebar-dx {
+    width: 40%;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
@@ -37,14 +67,63 @@
 }
 .content {width: 40%;}
 .title-h3 {
+.content {width: 60%;padding-right: 60px;margin-right: 40px;border-right: 1px solid #dbdbdb;}
+h3 {
     font-size: 1.2em;
     font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 10px;
 }
 .header-content {
     display: flex;
+    margin-bottom: 7px;
 }
 .header-content img {
     width: 50px;
     height: 50px;
     display: block;
+  }
+  ul {padding: 0;margin: 0;}
+
+  ul li {
+      
+      float: left;
+      list-style: none;  ;
+      margin-right: 10px;
+      margin-bottom: 10px;
+}
+  ul li a {
+    padding: 10px; 
+    display: block;
+    color: black;
+    border-radius: 30px; border: 1px solid #c6c6c6;    background-color: rgb(232, 232, 232);
+    text-decoration: none;
+}
+  ul li a:hover {
+      background-color: #cccccc;
+      transition: 0.5s;
+   
+}
+
+.section-top h3 {margin: 40px 0;}
+.row {
+    margin: 20px 0;
+    margin-bottom: 10px;
+}
+
+.bell, .bookmark, .glass {
+  margin: 0 5px;
+}
+.nav-search {
+    margin-right: 10px;
+    padding: 10px;
+  }
+  .twitter-connect {
+    padding: 10px 20px;
+    background-color: aqua;
+    border-radius: 31px;
+    width: auto;
+    margin-top: 20px;
+    display: block;
+    width: max-content;
   }
